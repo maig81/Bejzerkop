@@ -27,7 +27,6 @@ $bejzerkop = new Bejzerkop();
     <div class="container">
         <h1>BEJZERKOP</h1>
             <?php
-
                 if (isset($_POST['step'])) {
                     include "step" . $_POST['step'] . ".php";
                 } else {

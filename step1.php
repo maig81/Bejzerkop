@@ -8,7 +8,7 @@
                     <option value="<?= $key ?>"><?= $key ?></option>
                 <?php } ?>
             </select>
-            <label>Onaj sa kojeg ćeš</label>
+            <label>Source server</label>
         </div>
         <div class="col s2"></div>
 
@@ -22,11 +22,11 @@
                     <option value="<?= $key ?>" <?= $selected ?> ><?= $key ?></option>
                 <?php } ?>
             </select>
-            <label>Onaj na koji ćeš</label>
+            <label>Destination server</label>
         </div>
     </div>
     <div class="row text-center">
-        <button class="waves-effect waves-light btn-large">AJD DALJE...</button>
+        <button class="waves-effect waves-light btn-large">MOVING ON...</button>
     </div>
 
 </form>

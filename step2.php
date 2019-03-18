@@ -5,7 +5,7 @@
 
     <div class="row">
         <div class="input-field col s4">
-            <?= $_POST['sourceServer'] ?> baze:
+            <?= $_POST['sourceServer'] ?> databases:
             <?php
             foreach ($bejzerkop->databaseList($_POST['sourceServer']) as $database): ?>
                 <p>
@@ -21,7 +21,7 @@
             <div class="chip">-></div>
         </div>
         <div class="input-field col s4">
-            <?= $_POST['destinationServer'] ?> baze:
+            <?= $_POST['destinationServer'] ?> databases:
             <?php
             foreach ($bejzerkop->databaseList($_POST['destinationServer']) as $database): ?>
                 <p>
@@ -41,7 +41,9 @@
             <button type="button" id="bejzkop" class="waves-effect waves-light btn-large">BEJZKOP!</button>
         </div>
     </div>
-    <button id="bejzkopConfirm" class="waves-effect waves-light btn-large red darken-4" style="display: none">DA LI SI 100% SIGURAN? DESTINACIJA ĆE BITI PREGAŽENA, A AKO ZASEREŠ ODGOVARAĆEŠ VIŠOJ INSTANCI!!!</button>
+    <button id="bejzkopConfirm" class="waves-effect waves-light btn-large red darken-4" style="display: none">
+        ARE YOU 100% SURE??? DESTINATION DATABASE WILL BE OVERWRITTEN! IF YOU SCREW UP, YOU WILL ANSWER TO THE HIGHER POWER!!
+    </button>
 
 
 </form>
@@ -49,8 +51,8 @@
 <script>
     $(document).ready(function () {
         $("#bejzkop").click(function(){
-            if ($('input:checked').length !=2 ) {
-                alert("MORAŠ IZABRATI OBE BAZE, SUNCE TI POLJUBIM!")
+            if ($('input:checked').length != 2 ) {
+                alert("SELECT SOURCE AND DESTINATION, GOD DAMN IT! :)")
             } else {
                 $('input:not(:checked)').closest('p').hide('fast');
                 $(this).hide('fast');

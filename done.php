@@ -23,8 +23,10 @@ $bejzerkop = new Bejzerkop();
 <body>
 <div class="container">
     <h1>BEJZERKOP</h1>
-    Baza je sredjena!
-    <a href="index.php" class="waves-effect waves-light btn-large">OPET?</a>
+    DATABASE COPIED!<BR><br>
+    Have a nice day ;)
+    <br>
+    <a href="index.php" class="waves-effect waves-light btn-large">Again?</a>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
