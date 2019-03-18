@@ -1,0 +1,14 @@
+; List of servers
+; To add more servers just copy/paste
+[server1]
+DB_HOST=server_host_name
+DB_PORT=3306
+DB_USERNAME=user_name
+DB_PASSWORD=password
+
+[local_host]
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_USERNAME=root
+DB_PASSWORD=
+
