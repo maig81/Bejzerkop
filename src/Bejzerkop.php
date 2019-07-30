@@ -2,8 +2,6 @@
 
 namespace Bejzerkop;
 
-//use PHPMailer\PHPMailer\PHPMailer;
-//use PHPMailer\PHPMailer\Exception;
 use Postmark\PostmarkClient;
 use Postmark\Models\PostmarkAttachment;
 

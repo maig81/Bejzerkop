@@ -17,8 +17,7 @@ $sentMail = $bejzerkop->sendDatabaseToEmail($serverName, $databaseName, $emailAd
 
 include("views/header.php");
 
-if ($sentMail):
-?>
+if ($sentMail):?>
 Email poslat na <?= $emailAddress ?>
 <?php else: ?>
 Doshlo je do erora, bre!

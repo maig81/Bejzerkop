@@ -2,99 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a567fc60-ccea-4c55-940f-c56e6d59946f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/emails.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sendEmail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step1email.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/COMMITMENT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/SECURITY.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/VERSION" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/get_oauth_token.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-am.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-az.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ba.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-be.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-bg.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ca.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ch.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-cs.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-da.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-de.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-el.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-eo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-es.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-et.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-fa.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-fi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-fo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-fr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-gl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-he.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-hi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-hr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-hu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-id.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-it.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ja.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ka.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ko.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-lt.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-lv.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-mg.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ms.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-nb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-nl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-pl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-pt.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-pt_br.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ro.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ru.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-sk.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-sl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-sr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-sv.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-tl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-tr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-uk.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-vi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-zh.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-zh_cn.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/OAuth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/PHPMailer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/POP3.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/SMTP.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/bejzerkop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bejzerkop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/done.php" beforeDir="false" afterPath="$PROJECT_DIR$/done.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/Bejzerkop.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bejzerkop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/MySQLDump.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MySQLDump.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/MySQLImport.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MySQLImport.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servers.ini_dev" beforeDir="false" afterPath="$PROJECT_DIR$/servers.ini_dev" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step1.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/step2.php" beforeDir="false" afterPath="$PROJECT_DIR$/server2server_step2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step3.php" beforeDir="false" afterPath="$PROJECT_DIR$/server2server_step3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emails.ini" beforeDir="false" afterPath="$PROJECT_DIR$/emails.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/sendEmail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bejzerkop.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bejzerkop.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -116,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Bejzerkop.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="176" column="25" lean-forward="true" selection-start-line="176" selection-start-column="25" selection-end-line="176" selection-end-column="25" />
+            <state relative-caret-position="83">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
               <folding>
                 <element signature="e#103#131#0#PHP" expanded="true" />
               </folding>
@@ -131,8 +42,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sendEmail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+            <state relative-caret-position="398">
+              <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/emails.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -156,10 +76,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/servers.ini">
+        <entry file="file://$PROJECT_DIR$/servers.ini_dev">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+            <state relative-caret-position="184">
+              <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -222,7 +142,6 @@
         <option value="$PROJECT_DIR$/step3.php" />
         <option value="$PROJECT_DIR$/servers.ini_dev" />
         <option value="$PROJECT_DIR$/vendor/bejzerkop/Bejzerkop.php" />
-        <option value="$PROJECT_DIR$/emails.ini" />
         <option value="$PROJECT_DIR$/vendor/degordian/bejzerkop/composer.json" />
         <option value="$PROJECT_DIR$/vendor/kackavaljer/bejzerkop/src/Bejzerkop.php" />
         <option value="$PROJECT_DIR$/vendor/kackavaljer/bejzerkop/composer.json" />
@@ -243,8 +162,9 @@
         <option value="$PROJECT_DIR$/server2server_step2.php" />
         <option value="$PROJECT_DIR$/servers.ini" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/sendEmail.php" />
         <option value="$PROJECT_DIR$/src/Bejzerkop.php" />
+        <option value="$PROJECT_DIR$/sendEmail.php" />
+        <option value="$PROJECT_DIR$/emails.ini" />
       </list>
     </option>
   </component>
@@ -426,7 +346,7 @@
       <workItem from="1554986795895" duration="2765000" />
       <workItem from="1555059977825" duration="456000" />
       <workItem from="1555313177964" duration="1894000" />
-      <workItem from="1564489636266" duration="1838000" />
+      <workItem from="1564489636266" duration="2344000" />
     </task>
     <task id="LOCAL-00001" summary="Translated to English">
       <created>1552910867280</created>
@@ -442,17 +362,31 @@
       <option name="project" value="LOCAL" />
       <updated>1552911499127</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="sending trough Postmark... Way faster :D">
+      <created>1564491673179</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1564491673179</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Removed vardump">
+      <created>1564491843878</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1564491843878</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47711000" />
+    <option name="totallyTimeSpent" value="48217000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24639769" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24639769" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -467,7 +401,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50072044" side_tool="true" weight="0.29346487" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49927953" visible="true" weight="0.0971867" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49927953" visible="true" weight="0.0971867" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49927953" weight="0.3292232" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -481,7 +415,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Translated to English" />
     <MESSAGE value="New readme.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="New readme.md" />
+    <MESSAGE value="sending trough Postmark... Way faster :D" />
+    <MESSAGE value="Removed vardump" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed vardump" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/config/database.php" />
@@ -504,13 +440,6 @@
     <entry file="file://$PROJECT_DIR$/vendor/bejzerkop/Bejzerkop.php" />
     <entry file="file://$PROJECT_DIR$/composer.lock">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emails.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/phpmailer/phpmailer/COMMITMENT">
       <provider selected="true" editor-type-id="text-editor" />
@@ -590,23 +519,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/home.php" />
     <entry file="file://$PROJECT_DIR$/db.php" />
-    <entry file="file://$PROJECT_DIR$/readme.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="115">
-            <caret line="5" column="60" lean-forward="true" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servers.ini_dev">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/step1email.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -614,13 +526,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="10" selection-start-line="5" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servers.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -638,17 +543,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sendEmail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+    <entry file="file://$PROJECT_DIR$/readme.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="115">
+            <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server2server_step2.php">
+    <entry file="file://$PROJECT_DIR$/servers.ini_dev">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="184">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servers.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -659,13 +574,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server2server_step2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Bejzerkop.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="176" column="25" lean-forward="true" selection-start-line="176" selection-start-column="25" selection-end-line="176" selection-end-column="25" />
+        <state relative-caret-position="83">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
           <folding>
             <element signature="e#103#131#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sendEmail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emails.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
         </state>
       </provider>
     </entry>
