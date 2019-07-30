@@ -1,5 +1,7 @@
 <?php
 
+namespace Bejzerkop;
+
 /**
  * MySQL database dump.
  *
@@ -31,7 +33,7 @@ class MySQLDump
 	 * Connects to database.
 	 * @param  mysqli connection
 	 */
-	public function __construct(mysqli $connection, $charset = 'utf8')
+	public function __construct(\mysqli $connection, $charset = 'utf8')
 	{
 		$this->connection = $connection;
 

@@ -1,41 +1,99 @@
 <?php
-require_once "inc/Bejzerkop.php";
+
+use Bejzerkop\Bejzerkop;
+
+require __DIR__ . '/vendor/autoload.php';
+include("views/header.php");
 
 $bejzerkop = new Bejzerkop();
 ?>
-<!doctype html>
 
-<html lang="en">
-<head>
-    <meta charset="utf-8">
+<div class="container">
 
-    <title>BEJZERKOP</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
+    <?php if (isset($_GET['copy'])) {
+        echo "<h3 class='center green-text darken-3'>Iskopirano</h3>";
+    }
+    ?>
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
-    <script
-        src="http://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <div class="row">
+        <div class="col m6 s12">
+            <h4 class="center">Server->Server</h4>
+            <form method="post" action="server2server_step2.php">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <select name="sourceServer">
+                            <?php
+                            foreach ($bejzerkop->serverList as $key => $server) {
+                                ?>
+                                <option value="<?= $key ?>"><?= $key ?></option>
+                                <?php
+                            } ?>
+                        </select>
+                        <label>Source server</label>
+                    </div>
 
-</head>
+                    <div class="input-field col s6">
+                        <select name="destinationServer">
+                            <?php
+                            end($bejzerkop->serverList);
+                            $endKey = key($bejzerkop->serverList);
+                            foreach ($bejzerkop->serverList as $key => $server) {
+                                $selected = ($endKey == $key) ? "selected" : ""; ?>
+                                <option value="<?= $key ?>" <?= $selected ?> ><?= $key ?></option>
+                                <?php
+                            } ?>
+                        </select>
+                        <label>Destination server</label>
+                    </div>
+                </div>
+                <div class="row center">
+                    <button class="waves-effect waves-light btn-large">MOVING ON...</button>
+                </div>
+            </form>
+        </div>
 
-<body>
-    <div class="container">
-        <h1>BEJZERKOP</h1>
-            <?php
-                if (isset($_POST['step'])) {
-                    include "step" . $_POST['step'] . ".php";
-                } else {
-                    include "step1.php";
-                }
-            ?>
+        <div class="col m6 s12">
+            <h4 class="center">Localhost->email</h4>
+            <form action="sendEmail.php" method="POST">
+                <div class="row">
+                    <!-- LOCALHOST DATABASE LIST -->
+                    <div class="col s4">
+                        <?php foreach ($bejzerkop->databaseList('localhost') as $database): ?>
+                            <p>
+                                <label>
+                                    <input name="sourceDatabase" type="radio" value="<?= $database ?>" required/>
+                                    <span><?= $database ?></span>
+                                </label>
+                            </p>
+                        <?php endforeach; ?>
+                    </div>
+
+                    <div class="col s2"></div>
+
+                    <!-- USER LIST -->
+                    <div class="col s4">
+                        <?php foreach ($bejzerkop->emailList as $userName => $userEmail): ?>
+                            <p>
+                                <label>
+                                    <input name="destinationEmail" type="radio" value="<?= $userEmail ?>"/>
+                                    <span><?= $userName ?></span>
+                                </label>
+                            </p>
+                        <?php endforeach; ?>
+                        <input type="text" placeholder="Custom email" name="customEmail">
+                        <button class="waves-effect waves-light btn-large">SEND TO EMAIL</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</body>
-</html>
+</div>
 
 
+<script>
+    $(document).ready(function () {
+        $('select').formSelect();
+    });
+</script>
+
+<?php include("views/footer.php"); ?>

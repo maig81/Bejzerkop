@@ -1,0 +1,9 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^6.0",
+        "wildbit/postmark-php": "^2.6"
+    },
+    "autoload": {
+        "psr-4": {"Bejzerkop\\": "src/"}
+    }
+}

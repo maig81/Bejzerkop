@@ -1,5 +1,13 @@
-<form method="post" action="index.php">
-    <input type="hidden" value="3" name="step">
+<?php
+require __DIR__ . '/vendor/autoload.php';
+include("views/header.php");
+
+$bejzerkop = new \Bejzerkop\Bejzerkop();
+?>
+
+
+<h4>Server->Server</h4>
+<form method="post" action="server2server_step3.php">
     <input type="hidden" value="<?= $_POST['sourceServer'] ?>" name="sourceServer">
     <input type="hidden" value="<?= $_POST['destinationServer'] ?>" name="destinationServer">
 
@@ -61,3 +69,6 @@
         });
     })
 </script>
+
+
+<?php include("views/footer.php"); ?>

@@ -1,5 +1,7 @@
 <?php
 
+namespace Bejzerkop;
+
 /**
  * MySQL database dump loader.
  *
@@ -21,7 +23,7 @@ class MySQLImport
      * @param  mysqli connection
      * @throws Exception
      */
-	public function __construct(mysqli $connection, $charset = 'utf8')
+	public function __construct(\mysqli $connection, $charset = 'utf8')
 	{
 		$this->connection = $connection;
 

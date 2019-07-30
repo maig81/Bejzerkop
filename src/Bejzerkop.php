@@ -1,19 +1,23 @@
 <?php
-/**
- */
 
-require_once "MySQLDump.php";
-require_once "MySQLImport.php";
+namespace Bejzerkop;
 
+//use PHPMailer\PHPMailer\PHPMailer;
+//use PHPMailer\PHPMailer\Exception;
+use Postmark\PostmarkClient;
+use Postmark\Models\PostmarkAttachment;
 
 class Bejzerkop
 {
     public $serverList;
+    public $emailList;
     private $dumpFile = 'export.sql.gz';
+    private $fromEmail = 'database@degordian.com';
 
     public function __construct()
     {
         $this->serverList = parse_ini_file('./servers.ini', true);
+        $this->emailList = parse_ini_file('./emails.ini');
     }
 
     /**
@@ -23,13 +27,10 @@ class Bejzerkop
     public function databaseList($serverName)
     {
         $databaseList = [];
-        if ($dbConn = $this->serverConnect($serverName))
-        {
+        if ($dbConn = $this->serverConnect($serverName)) {
             $databases = $dbConn->query('SHOW DATABASES');
-            while( $row = mysqli_fetch_row( $databases ))
-            {
-                if (($row[0]!="information_schema") && ($row[0]!="mysql"))
-                {
+            while ($row = mysqli_fetch_row($databases)) {
+                if (($row[0]!="information_schema") && ($row[0]!="mysql")) {
                     $databaseList[] = $row[0];
                 }
             }
@@ -48,9 +49,8 @@ class Bejzerkop
         $username = $this->serverList[$serverName]['DB_USERNAME'];
         $password = $this->serverList[$serverName]['DB_PASSWORD'];
 
-
         // Create connection
-        $conn = new mysqli($host, $username, $password, $database);
+        $conn = new \mysqli($host, $username, $password, $database);
 
         // Check connection
         if ($conn->connect_error) {
@@ -66,6 +66,7 @@ class Bejzerkop
      * @param $destinationDatabase
      * @param $siteUrl
      * @throws Exception
+     * @return true
      */
     public function databaseCopy($sourceServer, $sourceDatabase, $destinationServer, $destinationDatabase, $siteUrl)
     {
@@ -77,6 +78,8 @@ class Bejzerkop
         }
 
         unlink($this->dumpFile);
+
+        return true;
     }
 
 
@@ -85,7 +88,8 @@ class Bejzerkop
      * @param $databaseName
      * @param $siteUrl
      */
-    public function changeSiteURL($serverName, $databaseName, $siteUrl) {
+    public function changeSiteURL($serverName, $databaseName, $siteUrl)
+    {
         $database = $this->serverConnect($serverName, $databaseName);
         $database->query('UPDATE wp_options 
                                 SET option_value = "' . $siteUrl . '" 
@@ -131,15 +135,48 @@ class Bejzerkop
     /**
      * @param $database
      */
-    public function dropAllTables($database) {
+    public function dropAllTables($database)
+    {
         $database->query('SET foreign_key_checks = 0');
-        if ($result = $database->query("SHOW TABLES"))
-        {
-            while($row = $result->fetch_array(MYSQLI_NUM))
-            {
+        if ($result = $database->query("SHOW TABLES")) {
+            while ($row = $result->fetch_array(MYSQLI_NUM)) {
                 $database->query('DROP TABLE IF EXISTS '.$row[0]);
             }
         }
         $database->query('SET foreign_key_checks = 1');
+    }
+
+    /**
+     * @param $serverName
+     * @param $databaseName
+     * @param $emailAddress
+     * @return mixed
+     * @throws Exception
+     */
+    public function sendDatabaseToEmail($serverName, $databaseName, $emailAddress)
+    {
+        $client = new PostmarkClient("f8393b4f-2e0b-48f1-9d83-a9f282997188");
+
+        $attachment = PostmarkAttachment::fromFile($this->dumpFile,
+            $this->dumpFile, 'application/zip', null);
+
+        //$attachment = PostmarkAttachment::fromRawData("attachment content", "hello.txt", "text/plain");
+
+        // Send an email:
+        $sendResult = $client->sendEmail(
+            "notification@mediatoolkit.com",
+            $emailAddress,
+            "BAZA $databaseName",
+            "You are the lucky winner of a Database Dump file :)",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            [$attachment]
+        );
+        return $sendResult;
     }
 }
