@@ -18,7 +18,6 @@ $sentMail = $bejzerkop->sendDatabaseToEmail($serverName, $databaseName, $emailAd
 include("views/header.php");
 
 if ($sentMail):
-    var_dump($sentMail);
 ?>
 Email poslat na <?= $emailAddress ?>
 <?php else: ?>
